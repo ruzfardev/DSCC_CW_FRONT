@@ -1,65 +1,43 @@
 ﻿@model IEnumerable<DSCC_MVC.Models.Book>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "All Books";
 }
 
-<h2>Index</h2>
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Author)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Publisher)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PublishedYear)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ISBN)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Title)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Author)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Publisher)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PublishedYear)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.ISBN)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="row">
+    <div class="col-md-10">
+        <form class="d-flex mb-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="col-md-2 text-right">
+        <button asp-action="Create" class="btn btn-primary w-100">Create</button>
+    </div>
+</div>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card card-hover h-100">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@item.Author</h6>
+                    <p class="card-text">@item.Description</p>
+                </div>
+                <div class="card-footer d-flex gap-1">
+                    <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-outline-primary flex-fill btn-sm"><i class="bi bi-pencil-square"></i></a>
+                    <a href="@Url.Action("Details", new { id = item.Id })" class="btn btn-outline-info flex-fill btn-sm"><i class="bi bi-book"></i></a>
+                    <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-outline-danger flex-fill btn-sm"><i class="bi bi-trash"></i></a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<style>
+    .card-hover:hover {
+        transform: scale(1.02); 
+        transition: transform 100ms ease-in;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    }
+</style>
