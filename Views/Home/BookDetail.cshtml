@@ -1,0 +1,23 @@
+﻿@model DSCC_MVC.Models.Book
+@{
+    ViewBag.Title = "Book Details";
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@Model.Author</h6>
+            <p class="card-text">@Model.Description</p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Publisher:</strong> @Model.Publisher</li>
+            <li class="list-group-item"><strong>Published Year:</strong> @Model.PublishedYear</li>
+            <li class="list-group-item"><strong>ISBN:</strong> @Model.ISBN</li>
+        </ul>
+        <div class="card-body">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" })
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+</div>

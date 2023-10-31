@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Transactions;
 
 namespace DSCC_MVC.Controllers
 {
@@ -40,6 +41,79 @@ namespace DSCC_MVC.Controllers
             // Pass the list of books to the view
             return View(books);
         }
+        public async Task<IActionResult> BookDetail(int id)
+        {
+            Book book = new Book();
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseUrl);
+                client.DefaultRequestHeaders.Clear();
+                HttpResponseMessage response = await client.GetAsync($"Book/{id}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    book = await response.Content.ReadFromJsonAsync<Book>();
+                }
+            }
+            return View(book);
+        }
+        
+ 
+        [HttpGet]
+        public IActionResult CreateBook()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateBook(Book book)
+        {
+            if (ModelState.IsValid)
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(baseUrl);
+                    client.DefaultRequestHeaders.Clear();
+                    HttpResponseMessage response = await client.PostAsJsonAsync("Book", book);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        // Retrieve the created book from the response
+                        var newBook = await response.Content.ReadFromJsonAsync<Book>();
+
+                        // Redirect to the "BookDetail" action with the new book's ID
+                        return RedirectToAction("BookDetail", new { id = newBook.Id });
+                    }
+                }
+            }
+            return View(book);
+        }
+
+
+
+        //// DELETE: api/ApiWithActions/5
+        //[HttpDelete("{id}")]
+        //public IActionResult Delete(int id)
+        //{
+        //    _recipesRepository.Delete(id);
+        //    return new OkResult();
+        //}
+
+        //[HttpPut()]
+        //public IActionResult UpdateRecipe([FromBody] Recipes recipe)
+        //{
+        //    if (recipe != null)
+        //    {
+        //        using (var scope = new TransactionScope())
+        //        {
+        //            _recipesRepository.Update(recipe);
+        //            scope.Complete();
+        //            return new OkResult();
+        //        }
+        //    }
+        //    return new NoContentResult();
+        //}
 
 
 

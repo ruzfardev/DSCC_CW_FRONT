@@ -12,7 +12,7 @@
         </form>
     </div>
     <div class="col-md-2 text-right">
-        <button asp-action="Create" class="btn btn-primary w-100">Create</button>
+        <a href="Home/CreateBook" class="btn btn-primary w-100">Create</a>
     </div>
 </div>
 <div class="row">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="card-footer d-flex gap-1">
                     <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-outline-primary flex-fill btn-sm"><i class="bi bi-pencil-square"></i></a>
-                    <a href="@Url.Action("Details", new { id = item.Id })" class="btn btn-outline-info flex-fill btn-sm"><i class="bi bi-book"></i></a>
+                    <a href="@Url.Action("BookDetail", new { id = item.Id })" class="btn btn-outline-info flex-fill btn-sm"><i class="bi bi-book"></i></a>
                     <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-outline-danger flex-fill btn-sm"><i class="bi bi-trash"></i></a>
                 </div>
             </div>

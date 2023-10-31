@@ -16,8 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\WIUT\lev-6\DSCC\DSCC_CW\DSCC_MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Home/BooksList.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb29rc0xpc3QuY3NodG1s
+[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Home/BookDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb29rRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Home/CreateBook.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVCb29rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Home/Index.cshtml]
