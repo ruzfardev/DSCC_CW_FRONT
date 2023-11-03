@@ -1,9 +1,11 @@
 ﻿@model DSCC_MVC.Models.Book
 @{
-    ViewBag.Title = "Book Details";
+    ViewData["Title"] = "Book Detail";
 }
 
 <div class="container mt-4">
+    <h2 class="text-center">Book Details</h2>
+
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">@Model.Title</h5>
@@ -16,8 +18,8 @@
             <li class="list-group-item"><strong>ISBN:</strong> @Model.ISBN</li>
         </ul>
         <div class="card-body">
-            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-primary" })
-            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+            <a asp-action="UpdateBook" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
         </div>
     </div>
 </div>

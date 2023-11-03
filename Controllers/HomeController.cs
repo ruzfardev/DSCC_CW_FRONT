@@ -90,32 +90,68 @@ namespace DSCC_MVC.Controllers
             return View(book);
         }
 
+        public async Task<IActionResult> DeleteBook(int id)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseUrl);
+                client.DefaultRequestHeaders.Clear();
 
+                HttpResponseMessage response = await client.DeleteAsync($"Book/{id}");
 
-        //// DELETE: api/ApiWithActions/5
-        //[HttpDelete("{id}")]
-        //public IActionResult Delete(int id)
-        //{
-        //    _recipesRepository.Delete(id);
-        //    return new OkResult();
-        //}
+                if (response.IsSuccessStatusCode)
+                {
+                    return RedirectToAction("Index");
+                }
+            }
 
-        //[HttpPut()]
-        //public IActionResult UpdateRecipe([FromBody] Recipes recipe)
-        //{
-        //    if (recipe != null)
-        //    {
-        //        using (var scope = new TransactionScope())
-        //        {
-        //            _recipesRepository.Update(recipe);
-        //            scope.Complete();
-        //            return new OkResult();
-        //        }
-        //    }
-        //    return new NoContentResult();
-        //}
+            // Handle errors or invalid model state here
+            return RedirectToAction("Index");
+        }
 
+        [HttpGet]
+        public async Task<IActionResult> UpdateBook(int id)
+        {
+            Book book = new Book();
 
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseUrl);
+                client.DefaultRequestHeaders.Clear();
+
+                HttpResponseMessage response = await client.GetAsync($"Book/{id}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    book = await response.Content.ReadFromJsonAsync<Book>();
+                }
+            }
+
+            return View(book);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateBook(Book book)
+        {
+            if (ModelState.IsValid)
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(baseUrl);
+                    client.DefaultRequestHeaders.Clear();
+
+                    HttpResponseMessage response = await client.PutAsJsonAsync($"Book/{book.Id}", book);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        // Redirect to the "BookDetail" action after successful update
+                        return RedirectToAction("BookDetail", new { id = book.Id });
+                    }
+                }
+            }
+
+            return View(book);
+        }
 
         public IActionResult Privacy()
         {

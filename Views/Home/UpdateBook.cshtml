@@ -1,0 +1,61 @@
+﻿@model DSCC_MVC.Models.Book
+
+@{
+    ViewData["Title"] = "UpdateBook";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Update Book</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form asp-action="UpdateBook" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Id" class="control-label">Book ID</label>
+                    <input asp-for="Id" class="form-control" readonly />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Title" class="control-label">Title</label>
+                    <input asp-for="Title" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">Description</label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Author" class="control-label">Author</label>
+                    <input asp-for="Author" class="form-control" />
+                    <span asp-validation-for="Author" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Publisher" class="control-label">Publisher</label>
+                    <input asp-for="Publisher" class="form-control" />
+                    <span asp-validation-for="Publisher" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="PublishedYear" class="control-label">Published Year</label>
+                    <input asp-for="PublishedYear" class="form-control" />
+                    <span asp-validation-for="PublishedYear" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ISBN" class="control-label">ISBN</label>
+                    <input asp-for="ISBN" class="form-control" />
+                    <span asp-validation-for="ISBN" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-1">
+                    <button type="submit" class="btn w-100 btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="mt-2">
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

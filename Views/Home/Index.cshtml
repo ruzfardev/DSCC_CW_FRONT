@@ -26,9 +26,9 @@
                     <p class="card-text">@item.Description</p>
                 </div>
                 <div class="card-footer d-flex gap-1">
-                    <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-outline-primary flex-fill btn-sm"><i class="bi bi-pencil-square"></i></a>
-                    <a href="@Url.Action("BookDetail", new { id = item.Id })" class="btn btn-outline-info flex-fill btn-sm"><i class="bi bi-book"></i></a>
-                    <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-outline-danger flex-fill btn-sm"><i class="bi bi-trash"></i></a>
+                    <a href="@Url.Action("UpdateBook", "Home", new { id = item.Id })" class="btn btn-outline-primary flex-fill btn-sm"><i class="bi bi-pencil-square"></i> Edit</a>
+                    <a href="@Url.Action("BookDetail", "Home", new { id = item.Id })" class="btn btn-outline-info flex-fill btn-sm"><i class="bi bi-book"></i> View</a>
+                    <a href="@Url.Action("DeleteBook", "Home", new { id = item.Id })" class="btn btn-outline-danger flex-fill btn-sm"><i class="bi bi-trash"></i> Delete</a>
                 </div>
             </div>
         </div>
