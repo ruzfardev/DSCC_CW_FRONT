@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers"
+    "\\Controllers",
+    "\\Models"
   ],
-  "SelectedNode": "\\Controllers\\HomeController.cs",
+  "SelectedNode": "\\DSCC_MVC.sln",
   "PreviewInSolutionExplorer": false
 }
