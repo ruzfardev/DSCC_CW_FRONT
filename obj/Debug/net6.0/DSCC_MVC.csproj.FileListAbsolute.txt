@@ -448,3 +448,9 @@ D:\WIUT\lev-6\DSCC\New\DSCC_CW\obj\Debug\net6.0\refint\DSCC_MVC.dll
 D:\WIUT\lev-6\DSCC\New\DSCC_CW\obj\Debug\net6.0\DSCC_MVC.pdb
 D:\WIUT\lev-6\DSCC\New\DSCC_CW\obj\Debug\net6.0\DSCC_MVC.genruntimeconfig.cache
 D:\WIUT\lev-6\DSCC\New\DSCC_CW\obj\Debug\net6.0\ref\DSCC_MVC.dll
+D:\WIUT\lev-6\DSCC\New\DSCC_CW\bin\Debug\net6.0\app\web.config
+D:\WIUT\lev-6\DSCC\New\DSCC_CW\bin\Debug\net6.0\app\appsettings.Development.json
+D:\WIUT\lev-6\DSCC\New\DSCC_CW\bin\Debug\net6.0\app\appsettings.json
+D:\WIUT\lev-6\DSCC\New\DSCC_CW\bin\Debug\net6.0\app\DSCC_MVC.deps.json
+D:\WIUT\lev-6\DSCC\New\DSCC_CW\bin\Debug\net6.0\app\DSCC_MVC.runtimeconfig.json
+D:\WIUT\lev-6\DSCC\New\DSCC_CW\bin\Debug\net6.0\aws-beanstalk-tools-defaults.json
