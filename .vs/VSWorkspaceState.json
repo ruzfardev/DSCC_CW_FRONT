@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
-    "\\Models"
+    "\\Models",
+    "\\Views",
+    "\\Views\\Home"
   ],
-  "SelectedNode": "\\DSCC_MVC.sln",
+  "SelectedNode": "\\Views\\Home\\BookDetail.cshtml",
   "PreviewInSolutionExplorer": false
 }

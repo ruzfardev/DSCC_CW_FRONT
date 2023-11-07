@@ -8,7 +8,7 @@ namespace DSCC_MVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly string baseUrl = "http://localhost:7777/api/";
+        private readonly string baseUrl = "http://ec2-54-237-194-232.compute-1.amazonaws.com/api/";
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
