@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QVLKBkeXitEAcNtfm89a8dE4NPZqSmaXtnlg8HHl2+abq7iGnDBafh952vQIW7Ivqm2Ja3rnoHjqchf8tq5d+g==",
+  "dgSpecHash": "3TrFSJekqunIjJa1UOV9KWCzkaJ1I+saxiebKFljekj0aQDEvoMKuleGnXxgEtpV6V7MVtg4pmVwEY84xbisRw==",
   "success": true,
-  "projectFilePath": "D:\\WIUT\\lev-6\\DSCC\\DSCC_CW\\DSCC_MVC\\DSCC_MVC.csproj",
+  "projectFilePath": "D:\\WIUT\\lev-6\\DSCC\\New\\DSCC_CW\\DSCC_MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Farrukh Ruzmetov6\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Farrukh Ruzmetov6\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -9549,11 +9549,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WIUT\\lev-6\\DSCC\\DSCC_CW\\DSCC_MVC\\DSCC_MVC.csproj",
+      "projectUniqueName": "D:\\WIUT\\lev-6\\DSCC\\New\\DSCC_CW\\DSCC_MVC.csproj",
       "projectName": "DSCC_MVC",
-      "projectPath": "D:\\WIUT\\lev-6\\DSCC\\DSCC_CW\\DSCC_MVC\\DSCC_MVC.csproj",
+      "projectPath": "D:\\WIUT\\lev-6\\DSCC\\New\\DSCC_CW\\DSCC_MVC.csproj",
       "packagesPath": "C:\\Users\\Farrukh Ruzmetov6\\.nuget\\packages\\",
-      "outputPath": "D:\\WIUT\\lev-6\\DSCC\\DSCC_CW\\DSCC_MVC\\obj\\",
+      "outputPath": "D:\\WIUT\\lev-6\\DSCC\\New\\DSCC_CW\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Farrukh Ruzmetov6\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9606,7 +9606,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

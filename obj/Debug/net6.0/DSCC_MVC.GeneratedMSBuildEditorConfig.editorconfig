@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DSCC_MVC
 build_property.RootNamespace = DSCC_MVC
-build_property.ProjectDir = D:\WIUT\lev-6\DSCC\DSCC_CW\DSCC_MVC\
+build_property.ProjectDir = D:\WIUT\lev-6\DSCC\New\DSCC_CW\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\WIUT\lev-6\DSCC\DSCC_CW\DSCC_MVC
+build_property.MSBuildProjectDirectory = D:\WIUT\lev-6\DSCC\New\DSCC_CW
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Home/BookDetail.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/Home/BookDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCb29rRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Home/CreateBook.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/Home/CreateBook.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVCb29rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Home/Index.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Home/Privacy.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Home/UpdateBook.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/Home/UpdateBook.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVcGRhdGVCb29rLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Shared/Error.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/_ViewImports.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/_ViewStart.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WIUT/lev-6/DSCC/DSCC_CW/DSCC_MVC/Views/Shared/_Layout.cshtml]
+[D:/WIUT/lev-6/DSCC/New/DSCC_CW/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-le6gkv3n1w
